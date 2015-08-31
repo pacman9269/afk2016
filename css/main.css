@@ -16,7 +16,7 @@ body{
 
 p{
 	line-height: 1.5em;
-	font-size: 1.25em;
+	font-size: 1em;
 }
 
 
@@ -86,62 +86,214 @@ p{
   font-size: 3.5em;
   
 }
+
+nav {
+  display: block;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0px;
+  text-align: center;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-shadow: #777777 0px 1px 0px;
+  -moz-box-shadow: #777777 0px 1px 0px;
+  box-shadow: #777777 0px 1px 0px;
+  z-index: 1;
+}
+
+nav ul {
+  vertical-align: top;
+}
+nav ul li {
+  display: inline-block;
+  padding: 27px 10px 27px 10px;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+nav ul li a {
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  color: #558eb8;
+}
+
+nav ul li a:hover {
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+  color: #6cd9a9;
+}
+
+nav ul li a.current {
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  color: #6cd9a9;
+}
 a{
 	text-decoration: none;
 }
 
 
-
-
-
-
-.nameContainer h1 {
-	padding-top: 3em;
-	text-align: center;
-}
-
-.nameContainer h2{
-	padding-top: 1em;
-	text-align: center;
-}
-
-.nameContainer {
-	height: 500px;
-	display:block;
-	position: relative;
-}
-
-.nameContainer img{
-
-margin-left:25%;
-margin-top: 15%;
-width: 50%;
-height: auto;
-position: absolute;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 
 }
 
+/* line 320, ../sass/desktop.scss */
+#panelists .profile, #speakers .profile {
+  vertical-align: middle;
+}
+/* line 327, ../sass/desktop.scss */
+#panelists .profile img, #speakers .profile img {
+  width: 140px;
+}
+/* line 331, ../sass/desktop.scss */
+#panelists .profile .photo, #speakers .profile .photo {
+  border: 3px solid #558eb8;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+/* line 337, ../sass/desktop.scss */
+#panelists .profile .table, #speakers .profile .table {
+  width: inherit;
+}
+/* line 341, ../sass/desktop.scss */
+#panelists .profile .cell, #speakers .profile .cell {
+  vertical-align: middle;
+}
+/* line 346, ../sass/desktop.scss */
+#panelists .spacer, #speakers .spacer {
+  width: 30px;
+  height: 30px;
+}
 
+.table {
+  display: table;
+  table-layout: fixed;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
-.nameProject {
+/* line 65, ../sass/desktop.scss */
+.row {
+  display: table-row;
+}
 
-	
-	height: 200px;
-	display:block;
-	font-size: 2em;
+/* line 69, ../sass/desktop.scss */
+.cell {
+  display: table-cell;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: top;
 }
 
 
-.nameProject h1 {
-	padding-top: 3em;
-	text-align: center;
+#sponsors .sponsor {
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+}
+/* line 274, ../sass/desktop.scss */
+#sponsors .sponsor img {
+  max-width: 50%;
+  margin-bottom: 2em;
 }
 
-.nameProject h2{
-	padding-top: 1em;
-	text-align: center;
+#about #schedule {
+  margin-top: 50px;
+  font-size: 1.1em;
+}
+/* line 224, ../sass/desktop.scss */
+#about #schedule .row .cell {
+  background-color: #97c0e5;
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  border-top: none;
+  border-right: none;
+}
+/* line 232, ../sass/desktop.scss */
+#about #schedule .row .schedule_column:last-child, #about #schedule .row .schedule_column:first-child {
+  border-left: none;
+  border-right: none;
+}
+/* line 237, ../sass/desktop.scss */
+#about #schedule .row #time_column {
+  width: 125px;
+}
+/* line 241, ../sass/desktop.scss */
+#about #schedule .row #spkr_column {
+  width: 137px;
+}
+/* line 246, ../sass/desktop.scss */
+#about #schedule .row.break .cell {
+  background-color: #558eb8;
+  color: #ebebeb;
+}
+/* line 251, ../sass/desktop.scss */
+#about #schedule .row.break .cell:last-child {
+  border-left: 1px solid #ebebeb
+}
+/* line 256, ../sass/desktop.scss */
+#about h2 {
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+/* line 261, ../sass/desktop.scss */
+#about .highlight {
+  color: #558eb8;
 }
 
+#categories .tab {
+  text-align: center;
+  border: 1px solid #558eb8;
+  border-right: none;
+  padding: 10px;
+  font-weight: 800;
+}
+/* line 291, ../sass/desktop.scss */
+#categories .tab:last-child {
+  border-right: 1px solid #558eb8;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+/* line 296, ../sass/desktop.scss */
+#categories .tab.selected {
+  background-color: #558eb8;
+  color: #ebebeb;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+/* line 302, ../sass/desktop.scss */
+#categories .category_info {
+  padding: 20px 40px;
+  border: 1px solid #558eb8;
+  border-top: none;
+}
+/* line 308, ../sass/desktop.scss */
+#categories .text {
+  display: none;
+}
+/* line 312, ../sass/desktop.scss */
+#categories .text.selected {
+  display: block;
+}
 
 .aboutContainer {
 	display:block;
@@ -170,10 +322,9 @@ position: absolute;
 }
 
 .awardContainer p{
-	padding-bottom: 4em;
+	padding-bottom: 1em;
 	text-align: left;
-	padding-left: 20%;
-	padding-right: 20%; 
+		 
 }
 
 .awardContainer h3{
@@ -187,7 +338,7 @@ position: absolute;
 
 .aboutContainer h1, p{
 	padding-top: 1em;
-	padding-bottom: 2em;
+	
 	text-align: center;
 	
 	
@@ -217,78 +368,7 @@ position: absolute;
 
 }
 
-.aboutProject {
-	display:block;
-	height: auto;
 
-}
-
-.aboutProjectSmall {
-	display:block;
-	height: auto;
-
-}
-
-.aboutProject p{
-padding-bottom: 2em;
-  text-align: left;
-  padding-right: 20%;
-  padding-left: 20%;
-}
-
-
-.aboutProjectSmall p{
-padding-bottom: 2em;
-  text-align: left;
-  padding-right: 20%;
-  padding-left: 20%;
-}
-
-.aboutProject h1{
-	text-align: center;
-	margin-top: 2em;
-} 
-
-.aboutProjectSmall h1{
-	text-align: center;
-	margin-top: 2em;
-} 
-
-
-#projectSection {
-	margin-top: 10em;
-}
-
-.aboutProject img{
-	width: 50%;
-	height:auto;
-	margin-left: 25%;
-	margin-right: auto;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	border: 1px solid black ;
-}
-
-.aboutProjectSmall img{
-	width: 40%;
-	height:auto;
-	margin-left: 30%;
-	margin-right: auto;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	border: 1px solid black ;
-}
-
-.aboutProject a{
-	display: block;
-	text-align: center;
-	color: #558EB8;
-	font-size: 1.5em;
-	margin: 1em;
-	margin-bottom:0.5em;
-	-webkit-transition: color 0.75s; 
-    transition: color 0.75s;
-}
 
 .awards {
 display: block;
