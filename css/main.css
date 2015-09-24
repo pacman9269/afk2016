@@ -19,8 +19,9 @@ p{
 	line-height: 1.5em;
 	font-size: 1em;
 }
-h1{
+h1 {
   margin-bottom: 1em;
+  font-size: 2em;
  
 }
 
@@ -59,6 +60,22 @@ ul{
 
 }
 
+
+input[type=submit] {
+  background-color: #3EA6B2;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size:30px;
+  text-align: center;
+  padding: 0.5em;
+  width: 10%;
+  height: auto;
+  margin-left: 45%;
+  margin-top: 26em;
+}
 
 #header {
   height: 900px;
@@ -226,9 +243,21 @@ max-height: 75%;
   margin-left: 10%;
   
   margin-bottom: 10em;
+  
 }
 
+.panelistContainer h2{
+  margin-bottom: 1em;
+}
 
+.comingSoon{
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  margin-top: 3em;
+  margin-bottom: 3em;
+
+}
 
 .panelistProfile{
 
@@ -243,6 +272,7 @@ max-height: 75%;
 .panelistImages{
   width:20%;
   display:inline-block;
+
   
   
 
@@ -427,6 +457,14 @@ margin-left: 20%;
 .desktop{
   display:none;
   
+}
+
+.comingSoon{
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 1em;
+
 }
 
 nav{ 
