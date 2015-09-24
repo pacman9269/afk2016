@@ -424,14 +424,26 @@ margin-left: 20%;
 
 }
 
-.mobileNav{
-
-  display: block;
+.desktop{
+  display:none;
+  
 }
 
-nav{
+nav{ 
 
-  display: none;
+text-align: center;
+height: 50px;
+
+}
+
+nav ul li {
+  display: inline-block;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  font-size: 1em;
+  font-weight: 400;
 }
 
 body{
